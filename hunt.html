@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html> <head> <style>
+    .flex-container {
+      display: flex;  flex-direction:row;
+      background-color:lightcoral;
+  }
+
+.flex-container > div {  /*div children of the flex container*/
+  background-color: #f1f1f1; 
+  margin: 10px;  padding: 20px;  font-size: 30px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) { 
+	 .flex-container{
+		 flex-direction:column;
+		 background-color:rgb(26, 194, 206);
+	  }
+}
+    p#shakes {
+    color: rgb(223, 56, 209);
+    background: rgb(58, 206, 211); 
+   
+  }
+  p#score {
+    color: rgb(214, 187, 32);
+    background: rgb(93, 95, 230);
+    
+  }
+  p {
+    color: ghostwhite;
+    background: rgb(56,85,23);
+    
+  }
+    h1{
+                color: rgb(219, 28, 133);
+                 background: rgb(33, 218, 147); 
+                    font-weight: bold;
+                    border: 1px solid black;
+                    padding: 0.1em;
+             }
+    #row {
+        position: absolute;
+        width: 100px; height: 100%;
+        border: 1px solid rgb(224, 127, 184)
+    }
+    .row {
+    display: inline-block;
+    border: solid 1px rgb(77, 189, 204);
+    width: 100px;
+    }
+</style>
+
+<title>Assignment 7 - HUNT</title>
+</head>
+
+
+
+<body>
+    <h1>Bird hunt Harshitha Gongidi</h1>
+	
+	<p>Click on the squares to search for a bird </p>
+    <p id="shakes"> Number of shakes is zero</p>
+    <p id="score">Location score is unknown</p>
+
+    <div class="container">
+        <div class = "row">
+            <div><img src="Images7/tree.jpg" id="tree1" onclick="check(0)" height="100" width="100"> </div>
+            <div><img src="Images7/tree.jpg" id="tree2" onclick="check(1)" height="100" width="100"> </div>
+            <div><img src="Images7/tree.jpg" id="tree3" onclick="check(2)" height="100" width="100"> </div>
+            <div><img src="Images7/tree.jpg" id="tree4" onclick="check(3)" height="100" width="100"> </div>
+            <div><img src="Images7/tree.jpg" id="tree5" onclick="check(4)" height="100" width="100"> </div>
+            
+        </div>
+
+        <div class = "row">
+            <div><img src="Images7/tree.jpg" id="tree6" onclick="check(5)" height="100" width="100"> </div>
+            <div><img src="Images7/tree.jpg" id="tree7" onclick="check(6)" height="100" width="100"> </div>
+            <div><img src="Images7/tree.jpg" id="tree8" onclick="check(7)" height="100" width="100"> </div>
+            <div><img src="Images7/tree.jpg" id="tree9" onclick="check(8)" height="100" width="100"> </div>
+            <div><img src="Images7/tree.jpg" id="tree10" onclick="check(9)" height="100" width="100"> </div>
+        </div>
+        
+        <div class = "row">
+            <div><img src="Images7/tree.jpg" id="tree11" onclick="check(10)" height="100" width="100"> </div>
+            <div><img src="Images7/tree.jpg" id="tree12" onclick="check(11)" height="100" width="100"> </div>
+            <div><img src="Images7/tree.jpg" id="tree13" onclick="check(12)" height="100" width="100"> </div>
+            <div><img src="Images7/tree.jpg" id="tree14" onclick="check(13)" height="100" width="100"> </div>
+            <div><img src="Images7/tree.jpg" id="tree15" onclick="check(14)" height="100" width="100"> </div>
+            
+        </div>
+        <div class = "row">
+            <div><img src="Images7/tree.jpg" id="tree16" onclick="check(15)" height="100" width="100"> </div>
+            <div><img src="Images7/tree.jpg" id="tree17" onclick="check(16)" height="100" width="100"> </div>
+            <div><img src="Images7/tree.jpg" id="tree18" onclick="check(17)" height="100" width="100"> </div>
+            <div><img src="Images7/tree.jpg" id="tree19" onclick="check(18)" height="100" width="100"> </div>
+            <div><img src="Images7/tree.jpg" id="tree20" onclick="check(19)" height="100" width="100"> </div>
+            
+        </div>
+        
+        <div class = "row">
+            <div><img src="Images7/tree.jpg" id="tree21" onclick="check(20)" height="100" width="100"> </div>
+            <div><img src="Images7/tree.jpg" id="tree22" onclick="check(21)" height="100" width="100"> </div>
+            <div><img src="Images7/tree.jpg" id="tree23" onclick="check(22)" height="100" width="100"> </div>
+            <div><img src="Images7/tree.jpg" id="tree24" onclick="check(23)" height="100" width="100"> </div>
+            <div><img src="Images7/tree.jpg" id="tree25" onclick="check(24)" height="100" width="100"> </div> 
+        </div>
+
+    </div>
+    </div>
+	
+	</body>
+    </html>	
