@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html> <head>
+	<title>reverse queue</title> 
+	<style>
+    .flex-container {
+      display: flex;  flex-direction:row;
+      background-color: red;
+  }
+
+.flex-container > div {  /*div children of the flex container*/
+  background-color: #f1f1f1; 
+  margin: 10px;  padding: 20px;  font-size: 30px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) { 
+	 .flex-container{
+		 flex-direction:column;
+		 background-color: green;
+	  }
+	}
+	
+</style></head>
+<body>
+	<h1>Harshitha Gongidi builds a reversed queue</h1>
+	<input type="text" id="inputs" name="inputValue" placeholder="Enter the text">
+
+		<div class="flex-container" id="target">
+		  <div class="queue">row item 1</div>   
+		  <div  class="queue">row item 2</div>  
+		  <div  class="queue">row item 3</div>  
+		</div>
+	
+	<p> Press the button to create an new element of type div and then add it to the container.
+		</p>
+		<button onclick="makeNewDiv()">Add value</button>
+		<button id="fetch" onclick = "fetchItem()" class="btn btn-success">Fetch</button>
+    	<button id="zap" onclick = "zap()" class="btn btn-info">Zap Values</button><br>
+	
+</body>
+<script>
+	function makeNewDiv(){
+		/* make the div and its text */
+		let element = document.createElement("div")
+		values = document.getElementById("inputs").value
+		element.innerHTML =  values
+		element.className = "queue"
+		let container = document.getElementById('target')
+		container.appendChild(element)
+		container.insertBefore(element)
+		container.firstChild(element)
+	}
+	function fetchItem(){
+        queueItems = document.getElementsByClassName("queue")
+        values = document.getElementById("inputs").value
+        queuelength = queueItems.length
+        if (queueItems != undefined && length > 0) {
+            queueItems[length - 1].remove();
+		}
+	}
+	function zap(){
+        queueItems = document.getElementsByClassName('queue');
+		values = document.getElementById("inputs").value;
+        if (queueItems != undefined && queueItems.length > 0) {
+            for (let i = 0; i < queueItems.length; i++) {
+                element = queueItems[i].innerHTML;
+                if (element == values) {
+                    console.log(queueItems[i])
+                    queueItems[i].remove();
+				}
+			}
+		}
+	}
+
+</script>
+</html>	
